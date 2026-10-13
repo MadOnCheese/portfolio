@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtitle Translation Portfolio - English to Latvian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#0b0c10',
+                            card: '#141620',
+                            cardHover: '#1c1f2d',
+                            violet: '#8b5cf6',
+                            purple: '#6d28d9',
+                            text: '#f3f4f6',
+                            muted: '#9ca3af',
+                            accent: '#a78bfa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            text-transform: none !important;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0c10;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #26293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b5cf6;
+        }
+        .poster-aspect {
+            aspect-ratio: 2 / 3;
+        }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-[#0b0c10] text-gray-100 antialiased selection:bg-purple-600 selection:text-white">
+
+   <header class="sticky top-0 z-40 bg-[#0b0c10]/90 backdrop-blur-md border-b border-gray-800/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-0">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:h-20 gap-3 sm:gap-0">
+            <!-- Top Row: Logo/Title & EN->LV Badge -->
+            <div class="flex items-center justify-between w-full sm:w-auto">
+                <div class="flex items-center gap-3 min-w-0 pr-2">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 to-indigo-500 flex items-center justify-center text-white shadow-lg shadow-violet-500/30 flex-shrink-0">
+                        <i class="fa-solid font-bold text-lg fa-closed-captioning"></i>
+                    </div>
+                    <div class="min-w-0">
+                        <h1 class="text-sm sm:text-xl font-bold tracking-tight text-white leading-tight">
+                            <span class="block sm:inline">Mārtiņš Grīnbergs</span>
+                            <span class="block sm:inline">Subtitle Portfolio</span>
+                        </h1>
+                            <p class="text-[11px] sm:text-xs text-gray-400 font-normal leading-tight">
+                                Professional English to Latvian 
+                                <span class="block sm:inline">Audiovisual Translation</span>
+                            </p>                    
+                        </div>
+                </div>
+
+                <!-- EN -> LV Badge (Visible on mobile right side, or inline on desktop) -->
+                <div class="flex sm:hidden items-center flex-shrink-0">
+                    <span class="text-xs px-2.5 py-1 rounded-full bg-violet-500/20 text-violet-300 border border-violet-500/30 font-medium whitespace-nowrap">EN &rarr; LV</span>
+                    
+                </div>
+
+                 <!-- Desktop EN -> LV Badge -->
+                <div class="hidden sm:flex items-center flex-shrink-0">
+                    <span class="text-xs px-2.5 py-1 rounded-full bg-violet-500/20 text-violet-300 border border-violet-500/30 font-medium whitespace-nowrap">EN &rarr; LV</span>
+                </div>
+            </div>
+
+
+            
+            <!-- Stats & Desktop EN->LV Badge -->
+            <div class="flex items-center justify-between sm:justify-end gap-4 sm:gap-6 pt-2 sm:pt-0 border-t border-gray-800/60 sm:border-t-0">
+                <!-- Stats (Visible on both mobile and desktop now) -->
+                <div class="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-300 font-medium">
+                    <span class="flex items-center gap-1.5 sm:gap-2 text-violet-400">
+                        <i class="fa-solid fa-film"></i>
+                       <span class="total-count-badge font-bold text-white">0</span> <span class="hidden xs:inline"></span> Titles Translated
+                    </span>
+                    <span class="flex items-center gap-1.5 sm:gap-2 text-emerald-400">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="font-bold text-white">+12,000</span> <span class="hidden xs:inline"></span> Minutes Localized
+                        
+                    </span>
+
+                    
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="relative overflow-hidden pt-10 pb-8 bg-gradient-to-b from-violet-950/20 via-[#0b0c10] to-[#0b0c10]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-violet-500/10 text-violet-300 border border-violet-500/20 mb-4">
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i> High Quality Audiovisual Localization
+                    <!-- Divider Line -->
+    <div class="h-4 w-px bg-gray-800/80 mx-0.5"></div>
+
+    <!-- Contact Icons (LinkedIn & Email) -->
+    <div class="flex items-center gap-2">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/martins-grinbergs/" target="_blank" rel="noopener noreferrer" class="p-1.5 rounded-lg bg-gray-800/50 text-gray-300 hover:text-sky-400 hover:bg-gray-800 transition-all border border-gray-700/50 flex items-center justify-center" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in text-sm"></i>
+        </a>
+        <!-- Email Link -->
+        <a href="mailto:martins@codegreen.lv" class="p-1.5 rounded-lg bg-gray-800/50 text-gray-300 hover:text-violet-400 hover:bg-gray-800 transition-all border border-gray-700/50 flex items-center justify-center" title="Send Email">
+            <i class="fa-solid fa-envelope text-sm"></i>
+        </a>
+    </div>
+                </span>
+            
+                
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                    Audiovisual Translation Catalog
+                </h2>
+                <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+                    Explore translated titles for cinema, streaming platforms, and network television. Specialized in nuanced English to Latvian subtitle localization to make the adaptation shine on its own as if never translated.
+                </p>
+            </div>
+            
+            <!-- Controls & Filters Bar -->
+            <div class="mt-8 pt-6 border-t border-gray-800/80 flex flex-col lg:flex-row gap-4 justify-between items-stretch lg:items-center">
+                <!-- Search Box -->
+                <div class="relative flex-grow max-w-lg">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="search-input" oninput="handleSearch()" placeholder="Search by title, year, or network..." 
+                        class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-[#141620] border border-gray-800 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all">
+                    <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+
+
+
+                
+                
+                <!-- Category Filters & View Toggle Container -->
+<div class="flex items-center gap-3 w-full flex-nowrap">
+    <!-- Scrollable Category Filters -->
+    <div class="flex items-center bg-[#141620] p-1 rounded-xl border border-gray-800 text-xs sm:text-sm overflow-x-auto no-scrollbar flex-1 min-w-0">
+        <button onclick="filterCategory('All')" class="cat-btn active px-3.5 py-1.5 rounded-lg font-medium transition-all bg-violet-600 text-white shadow-sm whitespace-nowrap flex-shrink-0" data-cat="All">
+            All Titles
+        </button>
+        <button onclick="filterCategory('Feature Films')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Feature Films">
+            Films
+        </button>
+        <button onclick="filterCategory('Scripted TV & Streaming')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Scripted TV & Streaming">
+            Scripted TV
+        </button>
+        <button onclick="filterCategory('Documentaries & Docuseries')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Documentaries & Docuseries">
+            Docs
+        </button>
+        <button onclick="filterCategory('Stand-Up Comedy')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Stand-Up Comedy">
+            Comedy
+        </button>
+        <button onclick="filterCategory('Network & Classic TV')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Network & Classic TV">
+            Network TV
+        </button>
+    </div>
+
+    <!-- Layout Toggle Switch (Pinned right next to category scroll bar) -->
+    <div class="flex items-center bg-[#141620] p-1 rounded-xl border border-gray-800 flex-shrink-0">
+        <button onclick="setViewMode('grid')" id="view-grid-btn" class="p-2 rounded-lg text-violet-400 bg-gray-800/80 transition-all" title="Grid View">
+            <i class="fa-solid fa-border-all text-sm"></i>
+        </button>
+        <button onclick="setViewMode('list')" id="view-list-btn" class="p-2 rounded-lg text-gray-400 hover:text-gray-200 transition-all" title="List View">
+            <i class="fa-solid fa-list text-sm"></i>
+        </button>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        <!-- Results stats line -->
+        <div class="flex items-center justify-between mb-6">
+            <div class="text-sm text-gray-400">
+                Showing <span id="visible-count" class="font-bold text-gray-100">46</span> of <span class="font-bold text-gray-100">46</span> items
+            </div>
+            <div class="text-xs text-gray-500 flex items-center gap-1">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Click card to view details and IMDb link</span>
+            </div>
+        </div>
+
+        <!-- Catalog Container -->
+        <div id="catalog-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6">
+            <!-- Dynamically populated via JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden py-16 text-center">
+            <div class="w-16 h-16 rounded-full bg-gray-800/60 flex items-center justify-center mx-auto mb-4 text-gray-500">
+                <i class="fa-solid fa-film-slash text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-200 mb-1">No matching titles found</h3>
+            <p class="text-sm text-gray-400 max-w-md mx-auto mb-6">Try adjusting your search query or filter settings.</p>
+            <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-medium text-sm transition-all shadow-md shadow-violet-600/20">
+                Reset All Filters
+            </button>
+        </div>
+    </main>
+
+<!-- Detail Modal -->
+<div id="detail-modal" class="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 overflow-y-auto">
+    <div class="relative w-full max-w-2xl bg-[#141620] border border-gray-800 rounded-2xl shadow-2xl overflow-y-auto max-h-[90vh] my-auto transform scale-95 transition-transform duration-300" id="modal-content">
+        <!-- Close Button (Fixed position inside the scrollable card so it's always accessible) -->
+        <button onclick="closeModal()" class="sticky sm:absolute top-4 right-4 ml-auto z-20 w-9 h-9 rounded-full bg-black/80 hover:bg-black text-gray-300 hover:text-white flex items-center justify-center backdrop-blur-md transition-all shadow-lg m-3 sm:m-0">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <div class="flex flex-col sm:flex-row -mt-12 sm:mt-0">
+            <!-- Modal Poster Image -->
+            <div class="sm:w-2/5 relative bg-gray-900 flex-shrink-0">
+                <img id="modal-poster" src="" alt="Title Poster" class="w-full h-64 sm:h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#141620] via-transparent sm:hidden"></div>
+            </div>
+
+                <!-- Modal Information -->
+                <div class="p-6 sm:w-3/5 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span id="modal-network" class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-violet-500/20 text-violet-300 border border-violet-500/30">
+                                Network
+                            </span>
+                            <span id="modal-year" class="text-xs text-gray-400 font-medium">Year</span>
+                        </div>
+
+                        <div>
+                            <h3 id="modal-title" class="text-2xl font-bold text-white mb-1 leading-tight">Title Header</h3>
+                            <p id="modal-category" class="text-xs text-violet-400 uppercase tracking-wider font-semibold">Category</p>
+                        </div>
+
+                        <div class="bg-[#0b0c10] p-3 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block mb-1">Translation Scope</span>
+                            <span id="modal-scope" class="font-semibold text-violet-200">Scope description</span>
+                        </div>
+
+                        <div id="plot-container">
+                            <!-- renderPlotMarkup(id) injects here -->
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+
+                  <!-- Modal Footer Action -->
+<div class="p-4 sm:p-6 border-t border-gray-800 bg-[#121318] flex items-center justify-center w-full">
+    <a id="modal-imdb-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 py-2.5 px-6 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-sm transition-all shadow-md active:scale-95">
+        <i class="fa-brands fa-imdb text-xl"></i>
+        <span>View on IMDb</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-0.5"></i>
+    </a>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto border-t border-gray-800/80 bg-[#0b0c10] py-8 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="mb-2">Audiovisual Subtitle Translation Portfolio &bull; English to Latvian Localization</p>
+            <p class="text-gray-600">All title artwork and names are trademarked by their respective production companies.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Exact portfolio dataset of 46 titles with verified IMDb links and real poster imagery
+        const titlesData = [
+            // Feature Films (11)
+            { id: 1, title: "Year One: A Political Odyssey", year: "2022", category: "Documentary Film", network: "HBO Max", scope: "Documentary Film", imdb: "https://www.imdb.com/title/tt22525694/", bg: "https://m.media-amazon.com/images/M/MV5BNDJlODZlZDgtZjkwZi00OGI2LWE3ZjUtMThhZDRhYTc2ZTU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "It centers on President Joe Biden's first year in office." },
+            { id: 2, title: "Supertroopers 3", year: "2026", category: "Feature Films", network: "Searchlight", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt8820258/", bg: "https://m.media-amazon.com/images/M/MV5BNzY3MmJlZGYtNTk1OS00NTE5LWEzOGYtMjIzODU5MWNhYWFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "When Farva's over-the-top Indian engagement to Thorny's sister spirals into chaos, the Super Troopers must navigate Thorny's schemes to break up the relationship, all while trying to bring down a pernicious new drug ring." },
+            { id: 3, title: "Gremlins 2: The New Batch", year: "1990", category: "Feature Films", network: "Warner Bros.", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt0099700/", bg: "https://m.media-amazon.com/images/M/MV5BZWI2ZTI2ZjAtOWYyZS00ZmY2LWE4ZDYtNTdmNWMwZTFjNzZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The Gremlins are back, and this time, they've taken control of a New York City media mogul's high-tech skyscraper." },
+            { id: 4, title: "The Image of You", year: "2024", category: "Feature Films", network: "Republic", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt28332336/", bg: "https://m.media-amazon.com/images/M/MV5BZmQzM2U3ZWUtY2JhOC00YzY3LTg1ZTItODY3M2RlMTM5NDUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "After Anna meets a stock trader, she thinks he's perfect, but her identical twin sister Zoe doesn't trust him, so she sets out to discover the truth about him." },
+            { id: 5, title: "French Girl", year: "2024", category: "Feature Films", network: "Paramount", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt23319892/", bg: "https://m.media-amazon.com/images/M/MV5BYmMwMzE0NTMtY2NlMi00OTMxLTlhOWYtMDhlNGQ0NzE1ZGMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Gordon Kinski, a high school teacher from Brooklyn, goes with his girlfriend and chef Sophie Tremblay to her hometown of Quebec City where she is testing for the Michelin 3-star restaurant of super-chef Ruby Collins." },
+            { id: 6, title: "The Lockdown", year: "2024", category: "Feature Films", network: "Amazon Prime", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt10080130/", bg: "https://m.media-amazon.com/images/M/MV5BOWQ1NjYyY2QtZjZjOC00MjhmLThkOGEtZWM5ODljM2MwNjUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Siblings Charlie and Jack are trapped in Myanmar's toughest prison and accused of a crime they didn't commit. Forced into televised fights against other inmates, they must work together and fight for their freedom." },
+            { id: 7, title: "Winter Spring Summer or Fall", year: "2024", category: "Feature Films", network: "Amazon Prime", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt24515124/", bg: "https://m.media-amazon.com/images/M/MV5BZmQ2MGRhYWQtZjQ4Ni00Y2EyLWI2OGQtOTYzNDkwZGU1NmI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Remi and Barnes, two very different teenagers, meet by chance in the winter of their senior year, then spend four days together over the course of a year that will change their lives forever." },
+            { id: 8, title: "September 5", year: "2024", category: "Feature Films", network: "Paramount", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt28082769/", bg: "https://m.media-amazon.com/images/M/MV5BOWUxY2YyYzctYWY3Yi00ZGJjLTkzMDktZjYzMTIzZjNhNmM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "During the 1972 Summer Olympics in Munich, Germany, an American sports broadcasting team must adapt to live coverage of the Israeli athletes being held hostage by a terrorist group." },
+            { id: 9, title: "Spin the Bottle", year: "2024", category: "Feature Films", network: "Lionsgate", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt22029194/", bg: "https://m.media-amazon.com/images/M/MV5BZmJjOWJkZmUtZmFhMi00NTg1LWI5Y2QtNTYxOGI4N2M2NDhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The story of a group of teenagers in small town Texas who unleash a deadly force after playing the famous game in an abandoned house where a grisly massacre once took place." },
+            { id: 10, title: "Millers in Marriage", year: "2024", category: "Feature Films", network: "Amazon Prime", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt32499895/", bg: "https://m.media-amazon.com/images/M/MV5BNWViZGY3OTMtZjU5Ny00YTFkLTljYjYtYTI3NDY4YzI4NWVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Millers in Marriage: Directed by Edward Burns. With Morena Baccarin, Patrick Wilson, Minnie Driver, Campbell Scott. A tale of three middle-aged married couples coming to grips with universal questions about marriage and fidelity, professional success and failure, and the challenge of finding a second act." },
+            { id: 11, title: "Finnegan's Foursome", year: "2026", category: "Feature Films", network: "Paramount", scope: "Feature Film", imdb: "https://www.imdb.com/title/tt23039114/", bg: "https://m.media-amazon.com/images/M/MV5BYmYzNmU0NjItOGNkNC00MjUzLWE0ZDMtNDdlOTUzMTg0NDIzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Two rival brothers and their adult children travel to Ireland to scatter their father's ashes, turning clashing egos and comic mishaps into an unexpected week of family bonding." },
+
+            // Stand-Up Comedy (2)
+            { id: 12, title: "John Early: Now More Than Ever", year: "2023", category: "Stand-Up Comedy", network: "HBO Max", scope: "Stand-Up Special", imdb: "https://www.imdb.com/title/tt11459818/", bg: "https://m.media-amazon.com/images/M/MV5BMTg4MTAwM2QtNWEwOS00NjY3LTk5M2MtNDdjMjkxY2Y1NWM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "John Early performs his silly, surreal, spontaneous stand-up set in live audience." },
+            { id: 13, title: "Alex Edelman: Just for Us", year: "2024", category: "Stand-Up Comedy", network: "HBO Max", scope: "Stand-Up Special", imdb: "https://www.imdb.com/title/tt31727542/", bg: "https://m.media-amazon.com/images/M/MV5BYzBhMjQwYTQtNzBhNS00MzQxLWExMTgtZjViNzViZjg3NTA3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Standup comic Alex Edelman's Broadway show, featuring his experience attending a meeting of White Nationalists in Queens, New York and other stories, comes to TV." },
+
+            // Documentaries & Docuseries (15)
+            { id: 14, title: "The Pigeon Tunnel", year: "2023", category: "Documentaries & Docuseries", network: "Apple TV+", scope: "Documentary Film", imdb: "https://www.imdb.com/title/tt28486633/", bg: "https://m.media-amazon.com/images/M/MV5BNDcwNTIyYTItZjdjYS00YzVhLTgyMjktMmZmZmJkMDcwNzg5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Spans six decades as le Carré gives his final and most personal interview, interrupted with rare archival footage and dramatic anecdotes. It is set against the stormy Cold War backdrop that extends into the present day." },
+            { id: 15, title: "Bama Rush", year: "2023", category: "Documentaries & Docuseries", network: "HBO Max", scope: "Documentary Film", imdb: "https://www.imdb.com/title/tt21814814/", bg: "https://m.media-amazon.com/images/M/MV5BZmViY2I2MmYtMjUxNi00ODljLWE3NTMtN2VhODI0MGY1ZDY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "It centers on women as they rush the sorority system at the University of Alabama in 2022." },
+            { id: 16, title: "Charlie Hustle & the Matter of Pete Rose", year: "2024", category: "Documentaries & Docuseries", network: "HBO Max", scope: "Docuseries", imdb: "https://www.imdb.com/title/tt32881541/", bg: "https://m.media-amazon.com/images/M/MV5BZjVjMjcyMWMtZTY1My00OTQ0LWFiMTQtMjRhZjJjMDMyYmFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Chronicling baseball legend Pete Rose's career, rise to fame, scandals and bid for reinstatement, with archival footage and interviews exploring his contradictory persona as both a tenacious hustler and a fallen icon tainted by gambling." },
+            { id: 17, title: "Number One in the Call Sheet", year: "2025", category: "Documentaries & Docuseries", network: "Apple TV+", scope: "Docuseries", imdb: "https://www.imdb.com/title/tt36005664/", bg: "https://m.media-amazon.com/images/M/MV5BZjk0ZGJjOTUtYzgxYS00Y2I0LTg1NGMtZTE0ZDM5ZmY1OTJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Number One on the Call Sheet: With Jay Leno, Tom Cruise, Nicole Kidman, Denzel Washington. Intimate interviews with top Black Hollywood actors reveal career challenges, achievements, life-changing moments, and success stories. They honor legends while reflecting on the next generation's potential." },
+            { id: 18, title: "The Dynasty: New England Patriots", year: "2024", category: "Documentaries & Docuseries", network: "Apple TV+", scope: "Docuseries", imdb: "https://www.imdb.com/title/tt18257378/", bg: "https://m.media-amazon.com/images/M/MV5BNGFhY2VhNzctNDQ0Mi00ZGExLTgyMGMtYTUzNDY0ZjliNjc1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The Dynasty: New England Patriots: With Bill Belichick, Tom Brady, Robert Kraft, Willie McGinest. A 10-part series featuring never-before-seen footage of the New England Patriots' 20-year journey from struggling franchise to football dynasty. In the process, Tom Brady, Bill Belichick, and Robert Kraft reveal the cost of greatness." },
+            { id: 19, title: "Knife Edge: Chasing Michelin Stars", year: "2025", category: "Documentaries & Docuseries", network: "Food Network", scope: "S01, Part of S02", imdb: "https://www.imdb.com/title/tt36935784/", bg: "https://m.media-amazon.com/images/M/MV5BN2YzOGM1M2YtZjM2ZS00ZmQ1LWE4MTgtODJjNWVlNWQ2NzY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Knife Edge: Chasing Michelin Stars: Created by Shona Baldwin, Tom Day, Sam Smaïl. With Jesse Burgess, Nathan Davies, Gareth Ward, Michel Roux Jr.. Following Michelin Guide inspectors who dine undercover with fake IDs and numbers to award stars, traveling from LA to London." },
+            { id: 20, title: "Mel Brooks: The 99 Year Old Man!", year: "2026", category: "Documentaries & Docuseries", network: "HBO Max", scope: "Documentary", imdb: "https://www.imdb.com/title/tt33035435/", bg: "https://m.media-amazon.com/images/M/MV5BMjE0Y2IzMmUtYmZmOC00MGQyLWE5NjAtYjAyMmYxNmFjYzJiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Mel Brooks: The 99 Year Old Man!: With Mel Brooks, Judd Apatow, Ben Stiller, Dana Gould. Follows the life, career, friendships, and loves of legendary writer, director, producer, and performer Mel Brooks, chronicling his early experiences and rise to superstardom." },
+            { id: 21, title: "Cowboy Cartel", year: "2024", category: "Documentaries & Docuseries", network: "Apple TV+", scope: "Part of S01", imdb: "https://www.imdb.com/title/tt33030134/", bg: "https://m.media-amazon.com/images/M/MV5BNDBkN2JiOTYtNjhmYS00ZThkLTlmMDctMTk3YWI0OTZlOTI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Cowboy Cartel: With Matthew Graham Wagner, Eduardo Jesus Cardoso, Al Rosa, Mike Keyrouse. Follows a rookie FBI agent uncovering a multimillion-dollar money laundering scheme orchestrated by Mexico's ruthless Los Zetas cartel through the American Quarter Horse racing industry." },
+            { id: 22, title: "Making of: The Last of Us", year: "2023–2025", category: "Documentaries & Docuseries", network: "HBO Max", scope: "S01-S02", imdb: "https://www.imdb.com/title/tt27478132/", bg: "https://m.media-amazon.com/images/M/MV5BMDkyMDIzMjktODVhMi00MzAxLWEyYmUtZTU2NTI3ODVjYTViXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Making of: The Last of Us: With Bella Ramsey, Pedro Pascal, Melanie Lynskey, Ashley Johnson. An all-access documentary detailing the daunting behind-the-scenes efforts that went into the production of the hit series The Last of Us." },
+            { id: 23, title: "Girls State", year: "2024", category: "Documentaries & Docuseries", network: "Apple TV+", scope: "Documentary Film", imdb: "https://www.imdb.com/title/tt30259532/", bg: "https://m.media-amazon.com/images/M/MV5BYTVmOTJjZDUtY2FjYS00ZTgxLWE1YTEtMTRlZjc0NDNjYzY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Girls State: Directed by Amanda McBaine, Jesse Moss. With Brooke Taylor, Emily Worthmore, Faith Glasgow, Nisha Murali. Follows 500 adolescent girls from all across Missouri as they come together for a week-long immersion in a sophisticated democratic laboratory, where they organize a Supreme Court to consider the most contentious issues of the day." },
+            { id: 24, title: "Stiller & Meara: Nothing Is Lost", year: "2025", category: "Documentaries & Docuseries", network: "Docu", scope: "Documentary", imdb: "https://www.imdb.com/title/tt37674658/", bg: "https://m.media-amazon.com/images/M/MV5BNDIwMDIwYjktY2M2OS00NjhjLThjOTItMmNhNGQwMzQzNWE2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Stiller & Meara: Nothing Is Lost: Directed by Ben Stiller. With Jerry Stiller, Anne Meara, Ben Stiller, Amy Stiller. A tribute to the comedy duo and a personal exploration by Ben Stiller into his family's legacy." },
+            { id: 25, title: "Deaf President Now!", year: "2025", category: "Documentaries & Docuseries", network: "Docu", scope: "Documentary Film", imdb: "https://www.imdb.com/title/tt34965967/", bg: "https://m.media-amazon.com/images/M/MV5BYmE0MjYwMmYtNmE4Mi00YjBhLTk3NjktY2Q3NDQyZWQ5YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Deaf President Now!: Directed by Nyle DiMarco, Davis Guggenheim. With Bridgetta Bourne-Firl, Jerry Covell, Greg Hlibok, I. King Jordan. In 1988, Deaf students at Gallaudet University protested until the school appointed its first Deaf president, Dr. I. King Jordan, marking a pivotal moment for Deaf rights and representation." },
+            { id: 26, title: "The Wild Ones", year: "2025", category: "Documentaries & Docuseries", network: "National Geographic", scope: "Part of S01", imdb: "https://www.imdb.com/title/tt28445343/", bg: "https://m.media-amazon.com/images/M/MV5BMDExY2VjNzYtZWRmMC00MmM3LWE1M2YtODkzODlhYzk3ZGI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The Wild Ones: With Aldo Kane, Vianet Djenguet, Declan Burley. Investigates the delicate ecosystems of our globe and finds information on how to help conserve and protect the most priceless endangered species." },
+            { id: 27, title: "Come See Me in the Good Light", year: "2025", category: "Documentaries & Docuseries", network: "Indie Doc", scope: "Documentary Feature", imdb: "https://www.imdb.com/title/tt34966013/", bg: "https://m.media-amazon.com/images/M/MV5BZTEwNjRiMzUtMmU1OC00OWE5LTkwYjItMGE1NTQwMTFiM2NmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Come See Me in the Good Light: Directed by Ryan White. With Megan Falley, Andrea Gibson, Tig Notaro. Facing an incurable diagnosis, two poet lovers embark on a poignant yet unexpectedly humorous exploration of love, mortality, and life's moments." },
+            { id: 28, title: "K-Everything", year: "2026", category: "Documentaries & Docuseries", network: "Docuseries", scope: "Docuseries", imdb: "https://www.imdb.com/title/tt38973922/", bg: "https://m.media-amazon.com/images/M/MV5BOGFjNTE5MGItMGQyZS00NDRmLTgzNTgtNDZkZGJiYTdkNjZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "K-Everything: With Daniel Dae Kim, Lee Byung-hun, BTS, Kim Eun-sook. Follows Daniel Dae Kim as he goes on a quest to discover how South Korea has sparked a global pop culture movement, driving trends in music, food, TV and film." },
+
+            // Scripted TV & Streaming (11)
+            { id: 29, title: "Fantasmas", year: "2024", category: "Scripted TV & Streaming", network: "HBO Max", scope: "S01", imdb: "https://www.imdb.com/title/tt18182112/", bg: "https://m.media-amazon.com/images/M/MV5BYjQ0ODkwODgtOGU3Mi00YzU3LTkwZjctNzRmMjRmYTI3ODE1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Fantasmas: Created by Julio Torres. With Julio Torres, Martine Gutierrez, Joe Rumrill, Marc Petrosino. It follows the tale of when Julio Torres lost a golden oyster." },
+            { id: 30, title: "Conan O'Brien Must Go", year: "2024", category: "Scripted TV & Streaming", network: "HBO Max", scope: "S01", imdb: "https://www.imdb.com/title/tt27790101/", bg: "https://m.media-amazon.com/images/M/MV5BYTEwNDkwYTktMGEzNC00ZGM1LWEzMDEtOTNhNWMxYmUyYThhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Conan O'Brien Must Go: With Conan O'Brien, Sona Movsesian, José Arroyo, Jordan Schlansky. After years of conversations with listeners from across the world on his podcast Conan O'Brien Needs a Friend (2018), Conan O'Brien sets off on an epic journey to connect with some of his dedicated followers in person." },
+            { id: 31, title: "Harry Potter: Wizards of Baking", year: "2024", category: "Scripted TV & Streaming", network: "Food Network", scope: "S01", imdb: "https://www.imdb.com/title/tt32374361/", bg: "https://m.media-amazon.com/images/M/MV5BMWRkZGFlOTAtNzA0NC00NjdjLWIzMDktZTQ2NTMzZDA5NjhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Harry Potter: Wizards of Baking: With James Phelps, Oliver Phelps, Carla Hall, Jozef Youssef. Pairs of professional bakers compete to create spellbinding edible showpieces on the sets where the Harry Potter films were made." },
+            { id: 32, title: "Paul American", year: "2025", category: "Scripted TV & Streaming", network: "HBO Max", scope: "S01", imdb: "https://www.imdb.com/title/tt35635261/", bg: "https://m.media-amazon.com/images/M/MV5BOWQ0NjIxM2EtMWRjYS00NDA3LWJkYWItZmFjZmRlODg0MWI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Paul American: With Logan Paul, Nina Agdal, Jake Paul, Jutta Leerdam. A exclusive footage follows social media stars Jake and Logan Paul, revealing private moments and personal insights into their extravagant lifestyles and family dynamics." },
+            { id: 33, title: "The Last of Us", year: "2023", category: "Scripted TV & Streaming", network: "HBO Max", scope: "S01-S02", imdb: "https://www.imdb.com/title/tt3581920/", bg: "https://m.media-amazon.com/images/M/MV5BYWI3ODJlMzktY2U5NC00ZjdlLWE1MGItNWQxZDk3NWNjN2RhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The Last of Us: Created by Neil Druckmann, Craig Mazin. With Bella Ramsey, Pedro Pascal, Gabriel Luna, Isabela Merced. After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope." },
+            { id: 34, title: "Youth", year: "2026", category: "Scripted TV & Streaming", network: "HBO Max", scope: "S01", imdb: "https://www.imdb.com/title/tt35949226/", bg: "https://m.media-amazon.com/images/M/MV5BN2FkZDYyMTktZTgxYi00NjUyLWJjOTktZWZjMjE5YzYxMGMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Youth: Created by Sharon Horgan. With Sharon Horgan, Libby Mai, Rupert Friend, Sharlene Whyte. A 50-year-old divorcee juggles dating life while taking care of her parents and adult son." },
+            { id: 35, title: "Landman", year: "2024", category: "Scripted TV & Streaming", network: "Paramount+", scope: "S01, Part of S02", imdb: "https://www.imdb.com/title/tt14186672/", bg: "https://m.media-amazon.com/images/M/MV5BNTQ1MzI1ZWYtNWMxMC00NmU4LTlmMjItZjY1NWMyYTdjMjM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Landman: Created by Taylor Sheridan, Christian Wallace. With Billy Bob Thornton, Ali Larter, Demi Moore, Jacob Lofland. A modern-day tale of fortune seeking in the world of West Texas oil rigs." },
+            { id: 36, title: "MobLand", year: "2025", category: "Scripted TV & Streaming", network: "Paramount+", scope: "S01", imdb: "https://www.imdb.com/title/tt31510819/", bg: "https://m.media-amazon.com/images/M/MV5BZDc4MmYxNTAtM2ViYy00YWQ4LThjZWUtNDZjNTZjNDFhNzBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "MobLand: Created by Ronan Bennett, Guy Ritchie. With Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt. Power is up for grabs as two warring crime families clash in a battle that threatens to topple empires. In the crossfire stands Harry Da Souza, a street-smart 'fixer' who knows too well where loyalties lie when opposing forces collide." },
+            { id: 37, title: "Poker Face", year: "2023-2025", category: "Scripted TV & Streaming", network: "Peacock", scope: "S01-S02", imdb: "https://www.imdb.com/title/tt14269590/", bg: "https://m.media-amazon.com/images/M/MV5BZmEwZWEyMTktMmVmMy00YjE4LWEzNWEtMjc2Zjk5NWM3MjkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Poker Face: Created by Rian Johnson. With Natasha Lyonne, Simon Helberg, Benjamin Bratt, Rhea Perlman. Charlie has an extraordinary ability to determine when someone is lying. She hits the road with her Plymouth Barracuda and at every stop encounters a new cast of characters and strange crimes that she can't help but investigate and solve." },
+            { id: 38, title: "Tulsa King", year: "2022", category: "Scripted TV & Streaming", network: "Paramount+", scope: "S01-S02", imdb: "https://www.imdb.com/title/tt16358384/", bg: "https://m.media-amazon.com/images/M/MV5BZWQ2ZmFjM2UtZDI3My00ZWJiLWFlZTQtOWI4OGFiMmMzNWZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Tulsa King: Created by Taylor Sheridan. With Sylvester Stallone, Andrea Savage, Martin Starr, Chris Caldovino. After being released from prison after 25 years, New York Mafia capo Dwight &quot;The General&quot; Manfredi is exiled to Tulsa, Oklahoma." },
+            { id: 39, title: "Mind Over Murder", year: "2022", category: "Scripted TV & Streaming", network: "HBO Max", scope: "Part of S01", imdb: "https://www.imdb.com/title/tt20782578/", bg: "https://m.media-amazon.com/images/M/MV5BYWQxMDEyOTUtZjc2ZC00ZmFjLWIzOWMtYzk4Y2VkYjkxODM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Mind Over Murder: With Tim Shelburne, Noah Archibald, Cara D'Adamo, Scott Watson. Chronicles the bizarre and psychologically complex story of six individuals who were convicted for the 1985 murder of a beloved 68- year-old grandmother, Helen Wilson, in Beatrice, Nebraska." },
+
+            // Network & Classic TV (7)
+            { id: 40, title: "Mom", year: "2013-2021", category: "Network & Classic TV", network: "CBS", scope: "Part of S07", imdb: "https://www.imdb.com/title/tt2660806/", bg: "https://m.media-amazon.com/images/M/MV5BMmQyNzAyMmQtNTllMi00ODIzLWJhMTAtNzA0N2E4NmIyNTdhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Mom: Created by Eddie Gorodetsky, Chuck Lorre, Gemma Baker. With Allison Janney, Anna Faris, Mimi Kennedy, Beth Hall. A newly sober single mom tries to pull her life together in Napa Valley while dealing with her wayward mother." },
+            { id: 41, title: "Person of Interest", year: "2011-2016", category: "Network & Classic TV", network: "CBS", scope: "Part of S01 & S04", imdb: "https://www.imdb.com/title/tt1839578/", bg: "https://m.media-amazon.com/images/M/MV5BOTcxNDJiMTUtN2ZhZS00OGE1LWJmZmYtN2VhYThiZTBhYWM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Person of Interest: Created by Jonathan Nolan. With Jim Caviezel, Taraji P. Henson, Kevin Chapman, Michael Emerson. An off-the-grid and presumed-dead former CIA agent, John Reese, is hired by a mysterious tech billionaire software genius, Harold Finch, to prevent violent crimes before they happen in New York City via an advanced surveillance software." },
+            { id: 42, title: "Gordita Chronicles", year: "2022", category: "Network & Classic TV", network: "HBO Max", scope: "Part of S01", imdb: "https://www.imdb.com/title/tt11987198/", bg: "https://m.media-amazon.com/images/M/MV5BZTU0N2FjZDAtZWIxZC00YWRlLWFjZTItNjI4Y2RiOGVmMTdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Gordita Chronicles: Created by Claudia Forestieri. With Diana Maria Riva, Juan Javier Cardenas, Olivia Goncalves, Savannah Nicole Ruiz. A Latina reporter looks back on her childhood as a chubby, willful, reluctant Dominican immigrant growing up with her eccentric family in 1980s Miami." },
+            { id: 43, title: "The West Wing", year: "1999-2006", category: "Network & Classic TV", network: "NBC", scope: "Part of S02, S04, S06 & S07", imdb: "https://www.imdb.com/title/tt0200276/", bg: "https://m.media-amazon.com/images/M/MV5BY2I2Mzc0YjItN2I3MS00NjNjLWE5OWUtYmQzMjkxZjIwOGY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The West Wing: Created by Aaron Sorkin. With Martin Sheen, Rob Lowe, Allison Janney, John Spencer. Follows US president Josiah Bartlet and his administration as they tackle various political issues in order to maintain peace and harmony in the nation." },
+            { id: 44, title: "The O.C.", year: "2003-2007", category: "Network & Classic TV", network: "FOX", scope: "Part of S02", imdb: "https://www.imdb.com/title/tt0362359/", bg: "https://m.media-amazon.com/images/M/MV5BNWUzMDViY2YtOGE0OS00NWFhLWJhM2ItNDE2Njc5YmRjZWQyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The O.C.: Created by Josh Schwartz. With Mischa Barton, Adam Brody, Peter Gallagher, Kelly Rowan. After being kicked out of his home, a poor troubled youth, is taken in by a public defender and his family where he becomes embroiled in the lives of the wealthy, upper-class neighborhood of Newport Beach, Orange County in California." },
+            { id: 45, title: "The Mentalist", year: "2008-2015", category: "Network & Classic TV", network: "CBS", scope: "Part of S06", imdb: "https://www.imdb.com/title/tt1196946/", bg: "https://m.media-amazon.com/images/M/MV5BYjM2MjJkNDktM2U5Yy00ZmY0LWFiYmItNGQ3ZDgwZjgwMDVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "The Mentalist: Created by Bruno Heller. With Simon Baker, Robin Tunney, Tim Kang, Owain Yeoman. Famous &quot;psychic&quot; Patrick Jane outs himself as a fake, and using his heightened observational skills and impeccable knowledge of the human psyche, he works with the police so he can find &quot;Red John&quot;, the madman who killed his family." },
+            { id: 46, title: "Two and a Half Men", year: "2003-2015", category: "Network & Classic TV", network: "CBS", scope: "Part of S07 & S08", imdb: "https://www.imdb.com/title/tt0369179/", bg: "https://m.media-amazon.com/images/M/MV5BMzI2ZDMyNGEtNmIwOS00NTI1LThlZDctYzYzYmE3NDNlNTJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", plot: "Two and a Half Men: Created by Lee Aronsohn, Chuck Lorre. With Jon Cryer, Ashton Kutcher, Angus T. Jones, Conchata Ferrell. A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his Malibu beach house." }
+        ];
+
+        // State variables
+        let currentCategory = "All";
+        let searchQuery = "";
+        let viewMode = "grid"; // 'grid' or 'list'
+        let selectedModalId = null;
+
+
+        function generatePosterGraphic(item) {
+            const categoryColors = {
+                "Feature Films": "from-purple-900/90 to-indigo-950/90",
+                "Stand-Up Comedy": "from-amber-900/90 to-red-950/90",
+                "Documentaries & Docuseries": "from-emerald-900/90 to-teal-950/90",
+                "Scripted TV & Streaming": "from-violet-900/90 to-slate-950/90",
+                "Network & Classic TV": "from-blue-900/90 to-gray-950/90"
+            };
+
+            const gradientClass = categoryColors[item.category] || "from-gray-900/90 to-black/90";
+
+            return `
+                <div class="relative w-full h-full overflow-hidden bg-gray-900 group">
+                    <img src="${item.bg}" 
+                         alt="${item.title}" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x600/141620/8b5cf6?text=${encodeURIComponent(item.title)}';" />
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t ${gradientClass} opacity-80 group-hover:opacity-70 transition-opacity"></div>
+                    
+                    <!-- Network Badge Overlay -->
+                    <div class="absolute top-3 left-3 z-10">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold tracking-wider bg-black/70 text-violet-300 border border-violet-500/30 backdrop-blur-md">
+                            ${item.network}
+                        </span>
+                    </div>
+
+                    <!-- Poster Title SVG overlay text -->
+                    <div class="absolute inset-0 p-4 flex flex-col justify-end z-10 pointer-events-none">
+                        <div class="space-y-1">
+                            <span class="text-[10px] uppercase font-semibold tracking-wider text-violet-400 block">${item.year}</span>
+                            <h4 class="text-base font-extrabold text-white leading-tight drop-shadow-md line-clamp-2">${item.title}</h4>
+                        </div>
+                        <div class="mt-2 pt-2 border-t border-white/10">
+                            <span class="inline-block px-2 py-0.5 rounded text-[10px] font-medium bg-violet-600/40 text-violet-100 border border-violet-400/30 backdrop-blur-sm">
+                                ${item.scope}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+
+
+        function renderCatalog() {
+            const container = document.getElementById('catalog-container');
+            const emptyState = document.getElementById('empty-state');
+            
+           // 1. Create a shallow copy and sort by year (newest first)
+    const sortedData = [...titlesData].sort((a, b) => Number(b.year) - Number(a.year));
+
+    // 2. Filter logic using sortedData
+    const filtered = sortedData.filter(item => {
+        const matchesCategory = (currentCategory === "All") || (item.category === currentCategory);
+        const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                             item.network.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                             item.scope.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                             item.year.includes(searchQuery);
+
+        return matchesCategory && matchesSearch;
+    });
+
+            document.getElementById('visible-count').textContent = filtered.length;
+            
+            if (filtered.length === 0) {
+                container.innerHTML = "";
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+
+            if (viewMode === "grid") {
+                container.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6";
+                container.innerHTML = filtered.map(item => `
+                    <div onclick="openModal(${item.id})" class="group relative rounded-xl overflow-hidden bg-[#141620] border border-gray-800/80 hover:border-violet-500/50 hover:shadow-xl hover:shadow-violet-950/30 transition-all duration-300 cursor-pointer poster-aspect flex flex-col justify-between">
+                        ${generatePosterGraphic(item)}
+                    </div>
+                `).join('');
+            } else {
+                container.className = "flex flex-col gap-3";
+                container.innerHTML = filtered.map(item => `
+                    <div onclick="openModal(${item.id})" class="group relative rounded-xl bg-[#141620] border border-gray-800 hover:border-violet-500/40 p-3 sm:p-4 transition-all duration-200 cursor-pointer flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4 min-w-0">
+                            <div class="w-12 h-16 rounded-md overflow-hidden bg-gray-900 flex-shrink-0 poster-aspect relative">
+                                <img src="${item.bg}" alt="${item.title}" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-violet-500/20 text-violet-300 border border-violet-500/30">
+                                        ${item.network}
+                                    </span>
+                                    <span class="text-xs text-gray-400 font-medium">${item.year}</span>
+                                </div>
+                                <h4 class="text-base font-bold text-white truncate group-hover:text-violet-300 transition-colors">${item.title}</h4>
+                                <p class="text-xs text-gray-400">${item.category} &bull; <span class="text-violet-400">${item.scope}</span></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 flex-shrink-0">
+                            <a href="${item.imdb}" target="_blank" onclick="event.stopPropagation()" class="p-2 rounded-lg bg-amber-500/20 hover:bg-amber-500 text-amber-400 hover:text-black transition-all" title="View IMDb">
+                                <i class="fa-brands fa-imdb text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+function updateStatsCount() {
+    // Get the total count from your titlesData array
+    const totalTitles = titlesData.length;
+    
+    // Select all badge instances (mobile and desktop) and update their text
+    const badges = document.querySelectorAll('.total-count-badge');
+    badges.forEach(badge => {
+        badge.textContent = totalTitles;
+    });
+}
+
+// Call the function on initial page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateStatsCount();
+    renderCatalog();
+});
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.add('bg-violet-600', 'text-white', 'shadow-sm');
+                    btn.classList.remove('text-gray-400');
+                } else {
+                    btn.classList.remove('bg-violet-600', 'text-white', 'shadow-sm');
+                    btn.classList.add('text-gray-400');
+                }
+            });
+            renderCatalog();
+        }
+
+        function handleSearch() {
+            const input = document.getElementById('search-input');
+            const clearBtn = document.getElementById('clear-search');
+            searchQuery = input.value.trim();
+            
+            if (searchQuery.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+            renderCatalog();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = "";
+            document.getElementById('clear-search').classList.add('hidden');
+            searchQuery = "";
+            renderCatalog();
+        }
+
+        function setViewMode(mode) {
+            viewMode = mode;
+            const gridBtn = document.getElementById('view-grid-btn');
+            const listBtn = document.getElementById('view-list-btn');
+
+            if (mode === 'grid') {
+                gridBtn.className = "p-2 rounded-lg text-violet-400 bg-gray-800/80 transition-all";
+                listBtn.className = "p-2 rounded-lg text-gray-400 hover:text-gray-200 transition-all";
+            } else {
+                listBtn.className = "p-2 rounded-lg text-violet-400 bg-gray-800/80 transition-all";
+                gridBtn.className = "p-2 rounded-lg text-gray-400 hover:text-gray-200 transition-all";
+            }
+            renderCatalog();
+        }
+
+        function resetFilters() {
+            currentCategory = "All";
+            searchQuery = "";
+            document.getElementById('search-input').value = "";
+            document.getElementById('clear-search').classList.add('hidden');
+            filterCategory("All");
+        }
+
+        function renderPlotMarkup(id) {
+    const item = titlesData.find(t => t.id === id);
+    
+    // Check if item exists and has a non-empty plot property
+    const hasPlot = item && item.plot && item.plot.trim() !== "";
+    const plotText = hasPlot ? item.plot : "Plot synopsis unavailable for this title.";
+    const textStyle = hasPlot ? "text-gray-300" : "text-gray-500 italic";
+
+    return `
+        <div class="space-y-1">
+            <span class="text-xs text-gray-400 font-medium">Short plot synopsis:</span>
+            <p class="text-xs ${textStyle} leading-relaxed bg-[#0b0c10] p-3 rounded-xl border border-gray-800">
+                ${plotText}
+            </p>
+        </div>
+    `;
+}
+
+        function openModal(id) {
+            selectedModalId = id;
+            const item = titlesData.find(t => t.id === id);
+            if (!item) return;
+
+            document.getElementById('plot-container').innerHTML = renderPlotMarkup(id);
+            document.getElementById('modal-title').textContent = item.title;
+            document.getElementById('modal-year').textContent = item.year;
+            document.getElementById('modal-network').textContent = item.network;
+            document.getElementById('modal-category').textContent = item.category;
+            document.getElementById('modal-scope').textContent = item.scope;
+            document.getElementById('modal-imdb-link').href = item.imdb;
+
+
+            
+            const posterImg = document.getElementById('modal-poster');
+            posterImg.src = item.bg;
+            posterImg.onerror = function() {
+                this.src = `https://placehold.co/400x600/141620/8b5cf6?text=${encodeURIComponent(item.title)}`;
+            };
+
+            const modal = document.getElementById('detail-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.remove('pointer-events-none', 'opacity-0');
+            modal.classList.add('opacity-100');
+            content.classList.remove('scale-95');
+            content.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+
+
+        }
+
+        function closeModal() {
+            selectedModalId = null;
+            const modal = document.getElementById('detail-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.classList.remove('opacity-100');
+            content.classList.add('scale-95');
+            content.classList.remove('scale-100');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('detail-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        window.onload = function() {
+            renderCatalog();
+        };
+        
+    </script>
+</body>
+</html>
