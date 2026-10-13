@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Subtitle Translation Portfolio - English to Latvian</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,15 +160,15 @@
                 
                 <!-- Controls & Filters Bar -->
 <div class="mt-8 pt-6 border-t border-gray-800/80 flex flex-col lg:flex-row gap-4 justify-between items-stretch lg:items-center">
-    <!-- Search Box (Flex Grow with proper minimum width) -->
-    <div class="relative flex-1 min-w-[280px] max-w-full lg:max-w-md">
-        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
-        <input type="text" id="search-input" oninput="handleSearch()" placeholder="Search by title, year, or network..." 
-            class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-[#141620] border border-gray-800 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all">
-        <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
-            <i class="fa-solid fa-circle-xmark"></i>
-        </button>
-    </div>
+    <!-- Search Box -->
+<div class="relative flex-1 min-w-[280px] max-w-full lg:max-w-md">
+    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+    <input type="text" id="search-input" oninput="handleSearch()" placeholder="Search by title, year, or network..." 
+        class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-[#141620] border border-gray-800 text-base sm:text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all">
+    <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-white z-10">
+        <i class="fa-solid fa-circle-xmark text-base"></i>
+    </button>
+</div>
     
     <!-- Category Filters & View Toggle Container -->
     <div class="flex items-center gap-3 w-full lg:w-auto flex-nowrap flex-shrink-0">
