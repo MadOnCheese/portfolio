@@ -174,38 +174,51 @@
 
                 
                 
-                <!-- Category Filters & View Toggle Container -->
-<div class="flex items-center gap-3 w-full flex-nowrap">
-    <!-- Scrollable Category Filters -->
-    <div class="flex items-center bg-[#141620] p-1 rounded-xl border border-gray-800 text-xs sm:text-sm overflow-x-auto no-scrollbar flex-1 min-w-0">
-        <button onclick="filterCategory('All')" class="cat-btn active px-3.5 py-1.5 rounded-lg font-medium transition-all bg-violet-600 text-white shadow-sm whitespace-nowrap flex-shrink-0" data-cat="All">
-            All Titles
-        </button>
-        <button onclick="filterCategory('Feature Films')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Feature Films">
-            Films
-        </button>
-        <button onclick="filterCategory('Scripted TV & Streaming')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Scripted TV & Streaming">
-            Scripted TV
-        </button>
-        <button onclick="filterCategory('Documentaries & Docuseries')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Documentaries & Docuseries">
-            Docs
-        </button>
-        <button onclick="filterCategory('Stand-Up Comedy')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Stand-Up Comedy">
-            Comedy
-        </button>
-        <button onclick="filterCategory('Network & Classic TV')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Network & Classic TV">
-            Network TV
+                <!-- Controls & Filters Bar -->
+<div class="mt-8 pt-6 border-t border-gray-800/80 flex flex-col lg:flex-row gap-4 justify-between items-stretch lg:items-center">
+    <!-- Search Box (Flex Grow with proper minimum width) -->
+    <div class="relative flex-1 min-w-[280px] max-w-full lg:max-w-md">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+        <input type="text" id="search-input" oninput="handleSearch()" placeholder="Search by title, year, or network..." 
+            class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-[#141620] border border-gray-800 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all">
+        <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+            <i class="fa-solid fa-circle-xmark"></i>
         </button>
     </div>
+    
+    <!-- Category Filters & View Toggle Container -->
+    <div class="flex items-center gap-3 w-full lg:w-auto flex-nowrap flex-shrink-0">
+        <!-- Scrollable Category Filters -->
+        <div class="flex items-center bg-[#141620] p-1 rounded-xl border border-gray-800 text-xs sm:text-sm overflow-x-auto no-scrollbar max-w-full">
+            <button onclick="filterCategory('All')" class="cat-btn active px-3.5 py-1.5 rounded-lg font-medium transition-all bg-violet-600 text-white shadow-sm whitespace-nowrap flex-shrink-0" data-cat="All">
+                All Titles
+            </button>
+            <button onclick="filterCategory('Feature Films')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Feature Films">
+                Films
+            </button>
+            <button onclick="filterCategory('Scripted TV & Streaming')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Scripted TV & Streaming">
+                Scripted TV
+            </button>
+            <button onclick="filterCategory('Documentaries & Docuseries')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Documentaries & Docuseries">
+                Docs
+            </button>
+            <button onclick="filterCategory('Stand-Up Comedy')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Stand-Up Comedy">
+                Comedy
+            </button>
+            <button onclick="filterCategory('Network & Classic TV')" class="cat-btn px-3.5 py-1.5 rounded-lg font-medium text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap flex-shrink-0" data-cat="Network & Classic TV">
+                Network TV
+            </button>
+        </div>
 
-    <!-- Layout Toggle Switch (Pinned right next to category scroll bar) -->
-    <div class="flex items-center bg-[#141620] p-1 rounded-xl border border-gray-800 flex-shrink-0">
-        <button onclick="setViewMode('grid')" id="view-grid-btn" class="p-2 rounded-lg text-violet-400 bg-gray-800/80 transition-all" title="Grid View">
-            <i class="fa-solid fa-border-all text-sm"></i>
-        </button>
-        <button onclick="setViewMode('list')" id="view-list-btn" class="p-2 rounded-lg text-gray-400 hover:text-gray-200 transition-all" title="List View">
-            <i class="fa-solid fa-list text-sm"></i>
-        </button>
+        <!-- Layout Toggle Switch -->
+        <div class="flex items-center bg-[#141620] p-1 rounded-xl border border-gray-800 flex-shrink-0">
+            <button onclick="setViewMode('grid')" id="view-grid-btn" class="p-2 rounded-lg text-violet-400 bg-gray-800/80 transition-all" title="Grid View">
+                <i class="fa-solid fa-border-all text-sm"></i>
+            </button>
+            <button onclick="setViewMode('list')" id="view-list-btn" class="p-2 rounded-lg text-gray-400 hover:text-gray-200 transition-all" title="List View">
+                <i class="fa-solid fa-list text-sm"></i>
+            </button>
+        </div>
     </div>
 </div>
 
